@@ -24,6 +24,7 @@ const Navbar = () => {
 
                         <span className="food-fusion text-3xl text-[#cd3f14]">
                             FOOD-SKILL
+                            
                         </span>
                     </div>
                 </div>

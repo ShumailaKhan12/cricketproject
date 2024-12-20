@@ -17,6 +17,7 @@ const Navbar = () => {
           </svg>
         </button> */}
                     <div
+                    
                         //   onClick={() => navigate("/home")}
                         className="ml-4 cursor-pointer flex items-center justify-center"
                     >

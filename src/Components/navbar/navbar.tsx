@@ -22,9 +22,11 @@ const Navbar = () => {
                     >
                         {/* <img className="w-1/5 mx-2" src={logo} alt="Loading" /> */}
 
+
+
                         <span className="food-fusion text-3xl text-[#cd3f14]">
                             FOOD-SKILL
-                            
+
                         </span>
                     </div>
                 </div>

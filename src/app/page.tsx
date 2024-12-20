@@ -1,4 +1,5 @@
-import Navbar from "@/Components/navbar/navbar";
+import Navbar from "@/Components/navbar/navbar"
+import News from "@/Components/News/news";
 import MatchCards from "./match-details/page";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
 <div>
   <Navbar/>
   <MatchCards/>
+  <News/>
 </div>
   );
 }

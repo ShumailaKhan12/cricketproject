@@ -9,7 +9,7 @@ const MatchCards = (): any => {
 
   const fetch = async () => {
     const cards = await GetMatchCardAPI();
-    console.log("cards: ", cards?.matchIds);
+    // console.log("cards: ", cards?.matchIds);
     setmatches(cards?.matchIds);
   };
 
@@ -30,7 +30,7 @@ const MatchCards = (): any => {
               <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              
+                exercitationem praesentium nihil.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">

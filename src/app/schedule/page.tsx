@@ -20,7 +20,7 @@ const Shedule = (): any => {
   return (
     <div className="">
       {matches?.map((post:any, index:any) => (
-        <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg mb-4">
+        <div key={index} className=" rounded overflow-hidden shadow-lg mb-4">
           <table className="table-fixed w-full border border-gray-300">
             <thead>
               <tr className="bg-gray-200">

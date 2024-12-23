@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Navbar = () => {
     return (
         <>
@@ -17,7 +19,7 @@ const Navbar = () => {
           </svg>
         </button> */}
                     <div
-                    
+
                         //   onClick={() => navigate("/home")}
                         className="ml-4 cursor-pointer flex items-center justify-center"
                     >
@@ -36,9 +38,11 @@ const Navbar = () => {
                     <p className="font-semibold uppercase tracking-widest text-red-600">
                         Live Match
                     </p>
+                    <Link href={"/schedule"}>
                     <p className="font-semibold uppercase tracking-widest text-red-600">
                         Schedule
                     </p>
+                    </Link>
                     <p className="font-semibold uppercase tracking-widest text-red-600">
                         About
                     </p>

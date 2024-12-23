@@ -19,29 +19,35 @@ const MatchCards = (): any => {
 
   return (
     <div className="grid grid-cols-4 grid-rows-2 gap-4">
-      {matches?.map((post: any,index:any) => (
-        <div
-          key={index}
-          className="max-w-sm rounded overflow-hidden shadow-lg"
-        >
+      {matches?.map((post: any, index: any) => (
+        <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg">
           <Link href={`/match-details/${post?.matchId}`} className="">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{post?.seriesName}</div>
+              <div className="flex justify-between">
+
               <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
+                {post?.team1?.teamName} VS {post?.team2?.teamName}
               </p>
+              <p>
+                {new Date(parseInt(post?.startDate)).toLocaleString("en-US", {
+                  timeZone: "Asia/Dubai",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: true,
+                })}
+              </p>
+                </div>
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                 {post?.stateTitle}
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              {post?.status}
+                {post?.status}
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              {post?.matchFormat}
+                {post?.matchFormat}
               </span>
             </div>
           </Link>

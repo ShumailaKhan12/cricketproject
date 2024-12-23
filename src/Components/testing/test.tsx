@@ -55,9 +55,9 @@ const MatchCards = (): any => {
 
   return (
     <div className="grid grid-cols-4 grid-rows-2 gap-4">
-      {posts.map((post) => (
+      {posts.map((post:any,index:any) => (
         <div
-          key={post.slug}
+          key={index}
           className="max-w-sm rounded overflow-hidden shadow-lg"
         >
           <Link href={`/match-details/${post.slug}`} className="">
